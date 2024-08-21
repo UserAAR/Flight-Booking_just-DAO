@@ -6,9 +6,10 @@ public class FlightEntity {
     private String origin;
     private String destination;
     private String departureTime;
-    private String freeSeats;
+    private int freeSeats;
 
-    public FlightEntity(String origin, String destination, String departureTime, String freeSeats) {
+    public FlightEntity(int id,String origin, String destination, String departureTime, int freeSeats) {
+        this.id = id;
         this.origin = origin;
         this.destination = destination;
         this.departureTime = departureTime;
@@ -43,11 +44,11 @@ public class FlightEntity {
         this.departureTime = departureTime;
     }
 
-    public String getFreeSeats() {
+    public int getFreeSeats() {
         return freeSeats;
     }
 
-    public void setFreeSeats(String freeSeats) {
+    public void setFreeSeats(int freeSeats) {
         this.freeSeats = freeSeats;
     }
 

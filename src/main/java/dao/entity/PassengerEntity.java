@@ -4,7 +4,8 @@ public class PassengerEntity {
     private int id;
     private String fullName;
 
-    public PassengerEntity(String fullName) {
+    public PassengerEntity(int id,String fullName) {
+        this.id = id;
         this.fullName = fullName;
     }
 

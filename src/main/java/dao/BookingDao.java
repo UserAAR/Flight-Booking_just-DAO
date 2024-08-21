@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface BookingDao {
     List<BookingEntity> getAllBookings();
-    BookingEntity getBookingById(int id);
+    List<BookingEntity> getBookingById(int id);
     boolean cancelBooking(int id);
     BookingEntity createBooking(BookingEntity bookingEntity);
 }

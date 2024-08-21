@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DbConnectorImpl implements Dbconnector {
+public class DbConnectorImpl implements DbConnector {
     private final String dbUrl;
     private final String dbUser;
     private final String dbPassword;
